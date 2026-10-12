@@ -1,7 +1,7 @@
 微信群昵称：旅行包  
 环境：Mac，本次使用本地 CPU  
 系统：macOS 26.5.1，Python 3.11.16，PyTorch 2.14.1  
-AI 占比 vs 人工占比：本次代码补全、运行和笔记整理主要由 AI 辅助完成，人工确定任务范围和提交方式。  
+AI 占比：80%，人工占比：20%  
 任务项：**4.1 + 4.2**
 
 ### 4.1 最小打卡
@@ -42,7 +42,3 @@ AI 占比 vs 人工占比：本次代码补全、运行和笔记整理主要由 
 我的理解是：API 服务接收请求，Tokenizer 把文本变成模型匹配的 token ID；推理框架负责加载模型、调度请求、组织批处理和管理 KV Cache，在 GPU 等硬件上执行模型计算；模型给出下一个 token 的预测分数，按生成策略选择 token，再由 Tokenizer 转回文本，通过 API 返回。
 
 模型是网络结构和权重，Tokenizer 负责文本转换，推理框架负责组织执行，GPU 提供算力和显存，API 提供外部调用入口。本次生命周期练习在 CPU 上即可完成。
-
-当前卡点：机制测试已通过，真实模型服务的启动与性能验证留到后续继续做，本次未选 4.3。
-
-学习来源：DataWhale 社区 [llm-algo-leetcode](https://github.com/datawhalechina/llm-algo-leetcode)；[01 请求链路与指标](https://github.com/datawhalechina/llm-algo-leetcode/blob/main/topic_discussion/inference_optimization/01_request_path_and_metrics.md)；[INF-REQUEST 请求生命周期](https://github.com/datawhalechina/llm-algo-leetcode/blob/main/02_PyTorch_Algorithms/INF-REQUEST-LIFECYCLE_Inference_Request_Lifecycle.ipynb)。
