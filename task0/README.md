@@ -33,7 +33,7 @@ AI 占比：80%，人工占比：20%
 
 一个容易混淆的地方是：首 token 到请求结束用了 5 ms，但计算 TPOT 应使用首末 token 的跨度 4 ms。另一个是统计分母：一次完成加一次首 token 前取消，成功率是 50%，但 TTFT 只有 1 个有效样本，取消请求不能当作 TTFT=0。
 
-![VS Code 中的 Python 代码、PyTorch 验证与测试通过结果](https://raw.githubusercontent.com/lih42534-wq/datawhale-llm-checkin/main/task0/vscode-pytorch-run.jpg)
+![VS Code 代码运行截图](https://raw.githubusercontent.com/lih42534-wq/datawhale-llm-checkin/main/task0/vscode-user-screenshot.png)
 
 [Python 代码](https://github.com/lih42534-wq/datawhale-llm-checkin/blob/main/task0/task0_request_lifecycle.py) · [已运行 Notebook](https://github.com/lih42534-wq/datawhale-llm-checkin/blob/main/task0/task0_executed.ipynb)
 
