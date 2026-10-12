@@ -1,0 +1,30 @@
+✅ 请求生命周期机制测试通过
+INF-REQUEST-LIFECYCLE | Task0 | GitHub: lih42534-wq
+Executed: 2026-10-12T11:10:12+08:00
+Environment: macOS-26.5.1-arm64-arm-64bit | Python 3.11.16 | CPU only
+Source: DataWhale / llm-algo-leetcode / INF-REQUEST-LIFECYCLE
+
+[PASS] test_completed_trace_and_metrics
+[PASS] test_stage_share_attribution
+[PASS] test_partial_trace_preserves_missing_metrics
+[PASS] test_failed_decode_keeps_streamed_tokens
+[PASS] test_workload_denominators
+[PASS] test_invalid_transitions
+Original tests: 6 / 6 passed
+
+Synthetic timestamps interpreted as milliseconds (not a model benchmark):
+Queue = 2.0 ms; preprocessing = 1.0 ms
+Prefill = 4.0 ms; TTFT = 7.0 ms
+TPOT = 2.0 ms/token; E2E = 12.0 ms
+Attribution: {'outcome': 'completed', 'stage': 'mixed', 'dominant_share': 0.4166666666666667}
+Completed + cancelled workload: {'total_requests': 2, 'completed_requests': 1, 'success_rate': 0.5, 'ttft_sample_count': 1, 'mean_ttft': 7.0}
+
+Additional boundary checks: 3 / 3 passed
+ALL CHECKS PASSED
+微信群昵称：旅行包 | GitHub: lih42534-wq
+PyTorch 2.14.1 | device: CPU | macOS / Apple Silicon
+TTFT = 7.0 ms | TPOT = 2.0 ms/token
+Phase shares [queue, preprocessing, prefill, decode]:
+[0.1667, 0.0833, 0.3333, 0.4167]
+6 original tests + 3 boundary checks + PyTorch cross-check: ALL PASSED
+Synthetic event replay; not a measured LLM benchmark.
